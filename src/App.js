@@ -18,7 +18,7 @@ handleChange=e=>{
 };
 
 componentDidMount(){
-  fetch('https://jsonplaceholder.typicode.com/users',{ mode: 'no-cors'}).then(response=>response.json())
+  fetch('https://jsonplaceholder.typicode.com/users').then(response=>response.json())
   .then(users=>this.setState({monsters:users}));
 }
   render(){
